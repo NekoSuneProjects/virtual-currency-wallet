@@ -1,7 +1,7 @@
 # Virtual Currency Wallet
 
 A full virtual cryptocurrency wallet system designed for Discord bots,
-games, or simulated trading environments.\
+games, or simulated trading environments.
 Supports balances, staking, trading, orders, friends, transactions, and
 more --- all backed by SQLite via Sequelize.
 
@@ -12,7 +12,6 @@ more --- all backed by SQLite via Sequelize.
 ### **Wallet & Balances**
 
 -   Add/remove crypto from users
--   Dynamic crypto list loaded from config.json\
 -   Convert crypto → fiat (USD by default, configurable)
 
 ### **Staking System**
@@ -27,7 +26,7 @@ more --- all backed by SQLite via Sequelize.
 
 ### **Trading / Swapping**
 
--   Swap one crypto → another using live price API\
+-   Swap one crypto → another using live price API
 -   Price conversion uses NekoGecko API (CoinGecko wrapper)
 
 ### **Orderbook Trading (Exchange-like system)**
@@ -41,9 +40,9 @@ more --- all backed by SQLite via Sequelize.
 
 ### **Friends System**
 
--   Add friends\
--   Friend requests\
--   Auto-decline pending requests after 1 hour\
+-   Add friends
+-   Friend requests
+-   Auto-decline pending requests after 1 hour
 -   Transfer crypto only to friends
 
 ### **Transactions**
@@ -57,14 +56,14 @@ from/to fields - crypto + amount
 ## 📦 Installation
 
 ``` bash
-npm install your-crypto-wallet-package
+npm install @nekosuneprojects/virtual-currency-wallet
 ```
 
 Or clone your repo:
 
 ``` bash
-git clone https://github.com/yourname/crypto-wallet
-cd crypto-wallet
+git clone https://github.com/NekoSuneProjects/virtual-currency-wallet
+cd virtual-currency-wallet
 npm install
 ```
 
@@ -73,9 +72,9 @@ npm install
 ## ✅ Example Usage
 
 ``` js
-const CryptoWallet = require("./src/cryptoWallet");
+const CryptoWallet = require("@nekosuneprojects/virtual-currency-wallet");
 
-const wallet = new CryptoWallet("./config.json");
+const wallet = new CryptoWallet();
 
 (async () => {
   await wallet.giveCrypto("123", "bitcoin", 0.01);
@@ -86,16 +85,6 @@ const wallet = new CryptoWallet("./config.json");
   const tx = await wallet.getTransactions("123");
   console.log(tx);
 })();
-```
-
-------------------------------------------------------------------------
-
-## ⚙️ config.json Example
-
-``` json
-{
-  "defaultFiatCurrency": "usd"
-}
 ```
 
 ------------------------------------------------------------------------
@@ -155,10 +144,10 @@ Auto-matching triggers instantly.
 
 ## ✅ Perfect for
 
-✅ Discord bots\
-✅ Virtual economy systems\
-✅ Game integrations\
-✅ Crypto simulators\
+✅ Discord bots
+✅ Virtual economy systems
+✅ Game integrations
+✅ Crypto simulators
 ✅ Learning exchange & staking systems
 
 ------------------------------------------------------------------------

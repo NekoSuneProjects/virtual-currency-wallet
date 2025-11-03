@@ -1,6 +1,6 @@
 {
   "name": "@nekosuneprojects/virtual-currency-wallet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtual cryptocurrency wallet system with SQLite and Discord BOT integration used as Points System",
   "main": "src/cryptoWallet.js",
   "type": "commonjs",
