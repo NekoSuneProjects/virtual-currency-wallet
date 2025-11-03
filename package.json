@@ -1,17 +1,17 @@
 {
   "name": "@nekosuneprojects/virtual-currency-wallet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Virtual cryptocurrency wallet system with SQLite and Discord BOT integration used as Points System",
   "main": "src/cryptoWallet.js",
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NekoSuneProjects/vrchat-infos.git"
+    "url": "https://github.com/NekoSuneProjects/virtual-currency-wallet.git"
   },
   "bugs": {
-    "url": "https://github.com/NekoSuneProjects/vrchat-infos/issues"
+    "url": "https://github.com/NekoSuneProjects/virtual-currency-wallet/issues"
   },
-  "funding": "https://github.com/NekoSuneProjects/vrchat-infos?sponsor",
+  "funding": "https://github.com/NekoSuneProjects/virtual-currency-wallet?sponsor",
   "keywords": [
     "crypto",
     "wallet",
