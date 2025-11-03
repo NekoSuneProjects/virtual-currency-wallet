@@ -1,4 +1,4 @@
-# CryptoWallet.js
+# Virtual Currency Wallet
 
 A full virtual cryptocurrency wallet system designed for Discord bots,
 games, or simulated trading environments.\
