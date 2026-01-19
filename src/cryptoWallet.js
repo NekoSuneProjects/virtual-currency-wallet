@@ -134,7 +134,7 @@ class CryptoWallet {
         return req;
     }
 
-    async autoDeclineFriendRequests() {
+    static async autoDeclineFriendRequests() {
         const now = Date.now();
         const oneHour = 60 * 60 * 1000;
 
@@ -438,6 +438,8 @@ class CryptoWallet {
     }
 }
 
-setInterval(() => CryptoWallet.autoDeclineFriendRequests(), 5 * 60 * 1000); // every 5 mins
+setInterval(() => {
+    CryptoWallet.autoDeclineFriendRequests().catch(e => console.error("Auto-decline failed:", e));
+}, 5 * 60 * 1000); // every 5 mins
 
 module.exports = CryptoWallet;
